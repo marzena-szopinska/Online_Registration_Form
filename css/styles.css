@@ -12,3 +12,21 @@ body {
 .container {
   padding: 15px;
 }
+
+/* ------ HEADER ------ */
+header {
+  background-color: #1E2B3D;
+}
+
+h1 {
+  /* make the text uppercase */
+  text-transform: uppercase;
+  /* increase the font size */
+  font-size: 120%;
+  color: #fff;
+
+}
+
+h1, .intro {
+  text-align: center;
+}
