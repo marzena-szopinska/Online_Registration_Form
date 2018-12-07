@@ -7,6 +7,7 @@
 body {
   font-family: 'Merriweather', serif;
   font-size: 16px;
+  line-height: 1.4;
 }
 
 .container {
@@ -21,12 +22,38 @@ header {
 h1 {
   /* make the text uppercase */
   text-transform: uppercase;
-  /* increase the font size */
-  font-size: 120%;
   color: #fff;
 
 }
 
 h1, .intro {
   text-align: center;
+}
+
+h1, h2 {
+  /* increase the font size */
+  font-size: 120%;
+}
+
+fieldset {
+  border: none;
+}
+
+label, .intro p {
+  color: #94979C;
+  font-size: 90%;
+}
+
+label[for="zip"] {
+  display: block;
+}
+
+input[id="zip"]{
+  width: 50%;
+}
+
+input, select {
+  width: 100%;
+  height: 45px;
+  padding: 5px 10px;
 }
