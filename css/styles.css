@@ -51,6 +51,8 @@ h2 {
 
 fieldset {
   border: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 label, .intro p {
@@ -63,7 +65,7 @@ label, .intro p {
   margin-bottom: 10px;
 }
 
-.contact-info input, select, textarea {
+.contact-info input, select {
   margin-bottom: 20px;
   border-radius: 3px;
   background-color: #EBEBEB;
@@ -78,15 +80,15 @@ label, .intro p {
 }
 
 /* target all the inputs apart from an input that has zip id */
-input:not([id='zip']), select, textarea {
-    width: 100%;
+.contact-info input:not([id='zip']), select {
+  width: 100%;
 }
 
 input[id="zip"]{
   width: 50%;
 }
 
-input, select {
+.contact-info input, select {
   height: 45px;
   padding: 5px 10px;
 }
@@ -102,6 +104,55 @@ select {
 }
 
 /* NEWSLETTER */
-.newsletter .info {
+.newsletters .info {
   display: block;
+  margin-bottom: 15px;
+}
+
+.newsletters label:not([class="info"]) {
+  display: inline-block;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.newsletters input[type="checkbox"],
+.newsletters input[type="radio"]{
+    display: inline-block;
+    width: 5%;
+    margin-right: 8px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px 10px;
+  background-color: #EBEBEB;
+  border-radius: 3px;
+  border: none;
+}
+
+button {
+    /* set its size */
+    width: 100%;
+    height: 60px;
+    /* set the background color */
+    background-color: #4ebbb5;
+    /* set text color */
+    color: #fff;
+    /* remove border */
+    border: 0;
+    /* make the font thicker */
+    font-weight: 700;
+    /* add some space to the bottom of the button */
+    margin-top: 15px;
+    /* make the corder smoother */
+    border-radius: 3px;
+}
+
+footer p {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-size: 90%;
+  font-style: italic;
+  color: #94979C;
 }
