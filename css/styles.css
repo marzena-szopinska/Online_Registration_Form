@@ -49,14 +49,21 @@ h2 {
   border-bottom: double #2e3846 8px;
 }
 
+.intro p, footer p {
+  color: #C2C2C2;
+}
+
 fieldset {
   border: none;
   padding-left: 0;
   padding-right: 0;
 }
 
+label {
+    color: #94979C;
+}
+
 label, .intro p {
-  color: #94979C;
   font-size: 90%;
 }
 
@@ -70,7 +77,7 @@ label, .intro p {
   border-radius: 3px;
   background-color: #EBEBEB;
   border: none;
-  transition: background-color .5 ease;
+  transition: background-color .5s ease;
 }
 
 ::placeholder {
@@ -156,7 +163,6 @@ footer p {
   margin-bottom: 100px;
   font-size: 90%;
   font-style: italic;
-  color: #94979C;
 }
 
 input[type="checkbox"],
@@ -184,4 +190,39 @@ textarea:focus {
     background-color: #D6C1C1;
     /* animate the background color and the border */
     transition: background-color .2s ease, border .35s ease;
+}
+
+option {
+  color: #222;
+}
+
+/* ----------- MEDIA QUERIES ---------- */
+@media (min-width: 768px){
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .intro h2 {
+    margin-top: 40px;
+    font-size: 150%;
+  }
+
+  .contact-info input:not([id='zip']), select {
+    width: 74%;
+    display: inline-block;
+  }
+
+  .contact-info label:not([id$="news"]) {
+    width: 25%;
+    display: inline-block;
+  }
+
+  input[id="zip"] {
+    width: 30%;
+  }
+
+  footer p {
+    margin-bottom: 200px;
+  }
 }
