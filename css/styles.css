@@ -70,6 +70,7 @@ label, .intro p {
   border-radius: 3px;
   background-color: #EBEBEB;
   border: none;
+  transition: background-color .5 ease;
 }
 
 ::placeholder {
@@ -103,7 +104,7 @@ select {
   color: #C2C2C2;
 }
 
-/* NEWSLETTER */
+/* ------------ NEWSLETTER ------------- */
 .newsletters .info {
   display: block;
   margin-bottom: 15px;
@@ -129,6 +130,7 @@ textarea {
   background-color: #EBEBEB;
   border-radius: 3px;
   border: none;
+  transition: background-color .5s ease;
 }
 
 button {
@@ -155,4 +157,31 @@ footer p {
   font-size: 90%;
   font-style: italic;
   color: #94979C;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    /* change bacground color on hover */
+    background-color: #d2e6c8;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    /* remove outline */
+    outline: none !important;
+    /* add a border */
+    border:2px solid #F0DDDD;
+    /* keep all the text to the left */
+    text-align: left;
+    /* set background color */
+    background-color: #D6C1C1;
+    /* animate the background color and the border */
+    transition: background-color .2s ease, border .35s ease;
 }
