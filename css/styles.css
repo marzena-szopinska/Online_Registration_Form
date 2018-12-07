@@ -58,8 +58,28 @@ label, .intro p {
   font-size: 90%;
 }
 
-label[for="zip"] {
+.contact-info label:not([id$="news"]) {
   display: block;
+  margin-bottom: 10px;
+}
+
+.contact-info input, select, textarea {
+  margin-bottom: 20px;
+  border-radius: 3px;
+  background-color: #EBEBEB;
+  border: none;
+}
+
+::placeholder {
+  font-size: 70%;
+  font-style: italic;
+  text-align: right;
+  color: #C2C2C2;
+}
+
+/* target all the inputs apart from an input that has zip id */
+input:not([id='zip']), select, textarea {
+    width: 100%;
 }
 
 input[id="zip"]{
@@ -67,7 +87,6 @@ input[id="zip"]{
 }
 
 input, select {
-  width: 100%;
   height: 45px;
   padding: 5px 10px;
 }
@@ -75,4 +94,14 @@ input, select {
 .contact-info {
   /* add a border bottom to the element */
   border-bottom: solid #2e3846 2px;
+}
+
+select {
+  font-size: 85%;
+  color: #C2C2C2;
+}
+
+/* NEWSLETTER */
+.newsletter .info {
+  display: block;
 }

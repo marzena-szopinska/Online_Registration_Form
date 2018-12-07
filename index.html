@@ -25,10 +25,10 @@
         <legend><h2>Contact Information</h2></legend>
           <!-- Full Name -->
           <label for="name">Full Name</label>
-          <input type="text" name="user_name" id="name" placeholder="required">
+          <input type="text" name="user_name" id="name" placeholder="Required">
           <!-- Email Address -->
           <label for="email">Email Address</label>
-          <input type="email" name="user_mail" id="email" placeholder="required">
+          <input type="email" name="user_mail" id="email" placeholder="Required">
           <!-- Phone Number -->
           <label for="phone">Phone Number</label>
           <input type="tel" name="user_phone" id="phone">
@@ -60,7 +60,7 @@
         </fieldset>
         <fieldset class="newsletters">
           <legend><h2>Newsletter</h2></legend>
-          <label>Select the newsletters you would like to receive</label>
+          <label class="info">Select the newsletters you would like to receive</label>
           <!-- HTML News -->
           <input type="checkbox" id="html_news" name="user_newsletters" value="news_html">
           <label for="html_news">HTML News</label>
@@ -71,7 +71,7 @@
           <input type="checkbox" id="js_news" name="user_newsletters" value="news_js">
           <label for="js_news">JavaScript News</label>
 
-          <label>Newsletter Format</label>
+          <label class="info">Newsletter Format</label>
           <!-- HTML Format -->
           <input type="radio" id="html_format" value="html_format" name="user_newsletter_format">
           <label for="html_format">HTML</label>
