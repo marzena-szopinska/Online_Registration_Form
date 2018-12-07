@@ -158,6 +158,16 @@ button {
     border-radius: 3px;
 }
 
+button p {
+  /* make a nice scale transition */
+  transition: transform .5s ease;
+}
+
+button:hover > p {
+  /* scale up the text inside the button */
+  transform: scale(1.2);
+}
+
 footer p {
   margin-top: 20px;
   margin-bottom: 100px;
@@ -175,6 +185,8 @@ select:hover,
 textarea:hover {
     /* change bacground color on hover */
     background-color: #d2e6c8;
+    /* add a border */
+    border:2px solid #F0DDDD;
 }
 
 input:focus,
@@ -186,6 +198,8 @@ textarea:focus {
     border:2px solid #F0DDDD;
     /* keep all the text to the left */
     text-align: left;
+    /* set the color of the text inside the focus window */
+    color: #94979C;
     /* set background color */
     background-color: #D6C1C1;
     /* animate the background color and the border */
