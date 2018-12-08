@@ -247,13 +247,11 @@ option {
     margin-top: 35px;
   }
 
-  button p {
-    /* make a nice scale transition */
-    transition: transform .5s ease;
+  button {
+    transition: background-color .5s ease;
   }
 
-  button:hover > p {
-    /* scale up the text inside the button */
-    transform: scale(1.2);
+  button:hover {
+    background-color: rgba(0, 0, 0, .4);
   }
 }
