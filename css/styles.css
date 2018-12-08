@@ -33,18 +33,20 @@ h1, .intro, footer{
   text-align: center;
 }
 
-h1, h2 {
+h1, .title {
   /* increase the font size */
   font-size: 120%;
 }
 
-h2 {
+.title {
   margin-bottom: 10px;
   margin-top: 20px;
+  font-weight: 700;
 }
 
 .intro p {
   padding-bottom: 40px;
+  margin-bottom: 30px;
   /* add double border bottom to the element */
   border-bottom: double #2e3846 8px;
 }
@@ -109,6 +111,7 @@ input[id="zip"]{
 .contact-info {
   /* add a border bottom to the element */
   border-bottom: solid #2e3846 2px;
+  margin-bottom: 30px;
 }
 
 select {
@@ -216,10 +219,6 @@ option {
     margin-top: 30px;
     padding-top: 10px;
     font-size: 150%;
-  }
-
-  .intro p {
-    margin-bottom: 15px;
   }
 
   form {
