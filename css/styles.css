@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -63,6 +64,7 @@ fieldset {
 
 form {
   background-color: #F2F2F2;
+  -webkit-box-shadow: 0 0 25px 10px #F2F2F2;
   box-shadow: 0 0 25px 10px #F2F2F2;
 }
 
@@ -84,7 +86,22 @@ label, .intro p {
   border-radius: 3px;
   background-color: #fff;
   border: none;
+  -webkit-transition: background-color .5s ease;
   transition: background-color .5s ease;
+}
+
+::-webkit-input-placeholder {
+  font-size: 70%;
+  text-align: right;
+  font-style: italic;
+  color: #C2C2C2;
+}
+
+:-ms-input-placeholder {
+  font-size: 70%;
+  text-align: right;
+  font-style: italic;
+  color: #C2C2C2;
 }
 
 ::placeholder {
@@ -136,6 +153,7 @@ select {
     display: inline-block;
     width: 5%;
     margin-right: 8px;
+    background: red;
 }
 
 textarea {
@@ -145,6 +163,7 @@ textarea {
   background-color: #fff;
   border-radius: 3px;
   border: none;
+  -webkit-transition: background-color .5s ease;
   transition: background-color .5s ease;
 }
 
@@ -201,6 +220,7 @@ textarea:focus {
     /* set background color */
     background-color: #E8D3D3;
     /* animate the background color and the border */
+    -webkit-transition: background-color .2s ease, border .35s ease;
     transition: background-color .2s ease, border .35s ease;
 }
 
@@ -247,6 +267,7 @@ option {
   }
 
   button {
+    -webkit-transition: background-color .5s ease;
     transition: background-color .5s ease;
   }
 
