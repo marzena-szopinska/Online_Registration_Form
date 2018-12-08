@@ -59,6 +59,11 @@ fieldset {
   padding-right: 0;
 }
 
+form {
+  background-color: #FAFFF5;
+  box-shadow: 0 0 25px 10px #FAFFF5;
+}
+
 label {
     color: #94979C;
 }
@@ -158,16 +163,6 @@ button {
     border-radius: 3px;
 }
 
-button p {
-  /* make a nice scale transition */
-  transition: transform .5s ease;
-}
-
-button:hover > p {
-  /* scale up the text inside the button */
-  transform: scale(1.2);
-}
-
 footer p {
   margin-top: 20px;
   margin-bottom: 100px;
@@ -201,13 +196,13 @@ textarea:focus {
     /* set the color of the text inside the focus window */
     color: #94979C;
     /* set background color */
-    background-color: #D6C1C1;
+    background-color: #E8D3D3;
     /* animate the background color and the border */
     transition: background-color .2s ease, border .35s ease;
 }
 
 option {
-  color: #222;
+  color: #94979C;
 }
 
 /* ----------- MEDIA QUERIES ---------- */
@@ -218,8 +213,15 @@ option {
   }
 
   .intro h2 {
-    margin-top: 40px;
+    margin-top: 30px;
+    padding-top: 10px;
     font-size: 150%;
+  }
+
+  form {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
   }
 
   .contact-info input:not([id='zip']), select {
@@ -238,5 +240,16 @@ option {
 
   footer p {
     margin-bottom: 200px;
+    margin-top: 35px;
+  }
+
+  button p {
+    /* make a nice scale transition */
+    transition: transform .5s ease;
+  }
+
+  button:hover > p {
+    /* scale up the text inside the button */
+    transform: scale(1.2);
   }
 }
