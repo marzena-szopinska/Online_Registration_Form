@@ -1,3 +1,4 @@
+/* BASIC STYLE */
 * {
   padding: 0;
   margin: 0;
@@ -6,31 +7,45 @@
 }
 
 body {
+  /* set the font for the whole page */
   font-family: 'Merriweather', serif;
+  /* set default font size */
   font-size: 16px;
+  /* set the hight of lines in a text for btter reading experience */
   line-height: 1.4;
 }
 
 .container {
+  /* add some space to the left and right of the container */
   padding-left: 15px;
   padding-right: 15px;
 }
 
+.smooth {
+  /* smooth out the edges of the element */
+  border-radius: 3px;
+}
+
 /* ------ HEADER ------ */
 header {
+  /* set the background color for the header */
   background-color: #1E2B3D;
 }
 
 h1 {
   /* make the text uppercase */
   text-transform: uppercase;
+  /* set the color of the text to white */
   color: #fff;
+  /* remove all the defaul margin from the heading */
   margin: 0;
+  /* add some padding to the top and bootm of the element */
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 h1, .intro, footer{
+  /* align the text to the center */
   text-align: center;
 }
 
@@ -40,12 +55,15 @@ h1, .title {
 }
 
 .title {
+  /* add some additional space around the element */
   margin-bottom: 10px;
   margin-top: 20px;
+  /* make the font bolder */
   font-weight: 700;
 }
 
 .intro p {
+  /* add some space to the element */
   padding-bottom: 40px;
   margin-bottom: 30px;
   /* add double border bottom to the element */
@@ -53,17 +71,22 @@ h1, .title {
 }
 
 .intro p, footer p {
+  /* set the text color */
   color: #C2C2C2;
 }
 
 fieldset {
+  /* remove the default border */
   border: none;
+  /* add some space inside the element */
   padding-left: 0;
   padding-right: 0;
 }
 
 form {
+  /* set the background color to the form */
   background-color: #F2F2F2;
+  /* add a nice shadow effect to the form */
   -webkit-box-shadow: 0 0 25px 10px #F2F2F2;
   box-shadow: 0 0 25px 10px #F2F2F2;
 }
@@ -73,19 +96,24 @@ label {
 }
 
 label, .intro p {
+  /* decrease the font size */
   font-size: 90%;
 }
 
 .contact-info label:not([id$="news"]) {
+  /* display it as a block level element */
   display: block;
   margin-bottom: 10px;
 }
 
 .contact-info input, select {
+  /* add some space to the bottom */
   margin-bottom: 20px;
-  border-radius: 3px;
+  /* set the background color to white */
   background-color: #fff;
+  /* remove the border around elements */
   border: none;
+  /* make a nice background color transition */
   -webkit-transition: background-color .5s ease;
   transition: background-color .5s ease;
 }
@@ -105,23 +133,30 @@ label, .intro p {
 }
 
 ::placeholder {
+  /* decrease the font size */
   font-size: 70%;
+  /* align the text to the right */
   text-align: right;
+  /* make the text italic */
   font-style: italic;
   color: #C2C2C2;
 }
 
-/* target all the inputs apart from an input that has zip id */
+/* target select and all the inputs apart from an input that has zip id */
 .contact-info input:not([id='zip']), select {
+  /* make it 100% wide */
   width: 100%;
 }
 
 input[id="zip"]{
+  /* set its width to 50% */
   width: 50%;
 }
 
 .contact-info input, select {
+  /* set the height to 45 px */
   height: 45px;
+  /* add some space inside the element */
   padding: 5px 10px;
 }
 
@@ -132,37 +167,54 @@ input[id="zip"]{
 }
 
 select {
+  /* decrease the font size */
   font-size: 85%;
   color: #C2C2C2;
 }
 
 /* ------------ NEWSLETTER ------------- */
 .newsletters .info {
+  /* display it as a block level element */
   display: block;
+  /* add some space to the bottom of the element */
   margin-bottom: 15px;
 }
 
+/* target all labels apart from the label with "info" class */
 .newsletters label:not([class="info"]) {
+  /* display it as an inline-block level element */
   display: inline-block;
+  /* set the width to 90% */
   width: 90%;
+  /* add soome space to the bottom of the element */
   margin-bottom: 20px;
 }
 
+/* target all chekboxes and radios inside "newsletter" fieldset */
 .newsletters input[type="checkbox"],
 .newsletters input[type="radio"]{
+    /* display it as an inline block element */
     display: inline-block;
+    /* set its width to 5% */
     width: 5%;
+    /* add some space to the right of the element */
     margin-right: 8px;
-    background: red;
+    /* make the cursor as a pointer */
+    cursor: pointer;
 }
 
 textarea {
+  /* make it take up the whole 100% of the parent container */
   width: 100%;
+  /* set the height to 100px */
   height: 100px;
+  /* add some space inside a textarea */
   padding: 10px 10px;
+  /* set its background to white */
   background-color: #fff;
-  border-radius: 3px;
+  /* remove the border */
   border: none;
+  /* make background color transition */
   -webkit-transition: background-color .5s ease;
   transition: background-color .5s ease;
 }
@@ -170,40 +222,37 @@ textarea {
 button {
     /* set its size */
     width: 100%;
+    /* set its height to 60px */
     height: 60px;
     /* set the background color */
     background-color: #4ebbb5;
-    /* set text color */
+    /* set text color to white */
     color: #fff;
     /* remove border */
     border: 0;
-    /* make the font thicker */
+    /* make the font bolder */
     font-weight: 700;
     /* add some space to the bottom of the button */
     margin-top: 15px;
-    /* make the corder smoother */
-    border-radius: 3px;
 }
 
 footer p {
+  /* add some space to the bottom and to top of the paragraph element */
   margin-top: 20px;
   margin-bottom: 100px;
+  /* decrease the font size */
   font-size: 90%;
+  /* make the font italic */
   font-style: italic;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  cursor: pointer;
 }
 
 input:hover,
 select:hover,
 textarea:hover {
-    /* change bacground color on hover */
+    /* change the background color on hover */
     background-color: #d2e6c8;
     /* add a border */
-    border:2px solid #F0DDDD;
+    border: 2px solid #F0DDDD;
 }
 
 input:focus,
@@ -212,7 +261,7 @@ textarea:focus {
     /* remove outline */
     outline: none !important;
     /* add a border */
-    border:2px solid #F0DDDD;
+    border: 2px solid #F0DDDD;
     /* keep all the text to the left */
     text-align: left;
     /* set the color of the text inside the focus window */
@@ -225,53 +274,68 @@ textarea:focus {
 }
 
 option {
+  /* set the color text of the option */
   color: #94979C;
 }
 
 /* ----------- MEDIA QUERIES ---------- */
 @media (min-width: 768px){
   .container {
+    /* set max width of the container to 600px */
     max-width: 600px;
+    /* center the container */
     margin: 0 auto;
   }
 
   .intro h2 {
+    /* add some space */
     margin-top: 30px;
     padding-top: 10px;
+    /* increase the font size */
     font-size: 150%;
   }
 
   form {
+    /* add some space inide the form element */
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
   }
 
+  /* target select and all inputs inside ".contact-info" fieldset apart from the zip input */
   .contact-info input:not([id='zip']), select {
+    /* set its width to 74% */
     width: 74%;
+    /* display it as inline block level element */
     display: inline-block;
   }
-
+  /* target all label inside ".contact-info" fieldset apart from the label with "news" id */
   .contact-info label:not([id$="news"]) {
+    /* set the width to 25% */
     width: 25%;
+    /* display it as inline block level element */
     display: inline-block;
   }
-
+  /* target input with "zip" id */
   input[id="zip"] {
+    /* set its width to 30% */
     width: 30%;
   }
 
   footer p {
+    /* add some space outside the paragraph element */
     margin-bottom: 200px;
     margin-top: 35px;
   }
 
   button {
+    /* make a nice color transition to the button */
     -webkit-transition: background-color .5s ease;
     transition: background-color .5s ease;
   }
 
   button:hover {
+    /* change the color of the button on hover */
     background-color: rgba(0, 0, 0, .4);
   }
 }
